@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheet"  src="script.css" > 
+<title>JavaScript BMI and Temperature Converter</title>
+</head>
+<body>
+<!-• Part A: BMI Comparison -->
+<h2>BMI Comparison</h2>
+<label for="lucas-bmi">Enter Lucas's BMI:</label>
+<input type="text" id="lucas-bmi" placeholder="Enter Lucas's BMI"><br>
+
+<label for="peter-bmi">Enter Peter's BMI:</label>
+<input type="text" id="peter-bmi" placeholder="Enter Peter's BMI"><br>
+
+<button onclick="compareBMI()">Compare BMI</button>
+<p id="bmi-result"></p>
+
+<!-• Part B: Temperature Converter -->
+<h2>Temperature Converter</h2>
+<label for="celsius-temp">Enter Celsius Temperature:</label>
+<input type="text" id="celsius-temp" placeholder="Enter Celsius Temperature"><br>
+
+<button onclick="convertTemperature()">Convert Temperature</button>
+<p id="temp-result"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
