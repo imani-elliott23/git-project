@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <label for="amount-paid">Enter Amount Paid:</label>
+    <input type="text" id="amount-paid" placeholder="Enter Amount Paid"><br>
+
+    <label for="tip-percentage">Enter Tip Percentage:</label>
+    <input type="text" id="tip-percentage" placeholder="Enter Tip Percentage"><br>
+
+    <button onclick="calculateTip()">Calculate Tip</button>
+    <p id="tip-result"></p>
+
+    <h2>Bill Tip Calculation</h2>
+    <label for="bill-value">Enter Bill Value:</label>
+    <input type="text" id="bill-value" placeholder="Enter Bill Value"><br>
+    <button onclick="calculateBillTip()">Calculate Bill Tip</button>
+    <p id="bill-tip-result"></p>
+
+    <h2>Tip Suggestions</h2>
+    <button class="modal-btn" data-tip="10">10% Tip Suggestion</button>
+    <button class="modal-btn" data-tip="15">15% Tip Suggestion</button>
+    <button class="modal-btn" data-tip="20">20% Tip Suggestion</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="suggestion-text"></p>
+            <button id="apply-suggestion">Apply Suggestion</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
